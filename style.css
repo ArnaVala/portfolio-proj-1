@@ -1,9 +1,71 @@
-/* || Reset - Normalize.css*/
+/* || Fonts */
+@font-face {
+	font-family: 'Apercu-Mono';
+	src: url('/assets/fonts/Apercu-Mono.eot');
+	src: url('/assets/fonts/Apercu-Mono.eot?#iefix') format('embedded-opentype'),
+		url('/assets/fonts/Apercu-Mono.woff2') format('woff2'),
+		url('/assets/fonts/Apercu-Mono.woff') format('woff'),
+		url('/assets/fonts/Apercu-Mono.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
 
-/* || General Styles */
+@font-face {
+	font-family: 'Apercu-Bold';
+	src: url('/assets/fonts/Apercu-Bold.eot');
+	src: url('/assets/fonts/Apercu-Bold.eot?#iefix') format('embedded-opentype'),
+		url('/assets/fonts/Apercu-Bold.woff2') format('woff2'),
+		url('/assets/fonts/Apercu-Bold.woff') format('woff'),
+		url('/assets/fonts/Apercu-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
 
+@font-face {
+	font-family: 'Apercu-Light';
+	src: url('/assets/fonts/Apercu-Light.eot');
+	src: url('/assets/fonts/Apercu-Light.eot?#iefix') format('embedded-opentype'),
+		url('/assets/fonts/Apercu-Light.woff2') format('woff2'),
+		url('/assets/fonts/Apercu-Light.woff') format('woff'),
+		url('/assets/fonts/Apercu-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Apercu-Medium';
+	src: url('/assets/fonts/Apercu-Medium.eot');
+	src: url('/assets/fonts/Apercu-Medium.eot?#iefix') format('embedded-opentype'),
+		url('/assets/fonts/Apercu-Medium.woff2') format('woff2'),
+		url('/assets/fonts/Apercu-Medium.woff') format('woff'),
+		url('/assets/fonts/Apercu-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Apercu-Regular';
+	src: url('/assets/fonts/Apercu-Regular.eot');
+	src: url('/assets/fonts/Apercu-Regular.eot?#iefix')
+			format('embedded-opentype'),
+		url('/assets/fonts/Apercu-Regular.woff2') format('woff2'),
+		url('/assets/fonts/Apercu-Regular.woff') format('woff'),
+		url('/assets/fonts/Apercu-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* || Basic */
 
 /* || Typography */
 
-
 /* || Colors */
+
+/* || Layout */
+
+/* || Sections */
