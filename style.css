@@ -304,7 +304,7 @@ p {
 /* settings responsive font sizes */
 html {
 	font-size: 10px;
-	overflow: scroll;
+	overflow: hidden;
 }
 
 body {
@@ -331,7 +331,8 @@ body {
 	height: 100vh;
 	width: 100vw;
 	margin: auto;
-	overflow: hidden;
+	overflow: scroll;
+	/*hidden? with scroll-in-view */
 }
 
 .page {
@@ -498,7 +499,110 @@ body {
 	opacity: 1;
 }
 
+/***** MAIN *****/
+
+main {
+	position: relative;
+	z-index: 1;
+}
+
 /* || Sections */
+
+.heading {
+	position: relative;
+	z-index: 1;
+	margin-top: 15vh;
+	grid-column: 1;
+	font-family: 'Apercu-mono', 'Roboto Mono', monospace;
+	font-size: 12.2vw;
+	font-weight: 100;
+	line-height: 0.88em;
+	letter-spacing: 0.04ch;
+	text-transform: uppercase;
+	color: var(--color-secondary);
+	/*transition all properties if motion*/
+	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1), color 0s,
+		transform 0s;
+}
+
+.heading__line {
+	color: var(--color-secondary);
+	grid-column-end: 13;
+	opacity: 1;
+	/*transition properties if motion- rotate from left*/
+}
+
+.heading__line:first-of-type {
+	grid-column-start: 1;
+	/*transition: all transform and opacity */
+}
+
+.heading__line:nth-of-type(2) {
+	grid-column-start: 4;
+}
+.heading__line:nth-of-type(2) span {
+	-webkit-text-stroke: 1px #1d1d1d;
+	-webkit-text-fill-color: transparent;
+}
+.heading__line:nth-of-type(3) {
+	grid-column-start: 2;
+}
+.heading__line:nth-of-type(4) {
+	grid-column-start: 4;
+}
+
+.heading__abstract {
+	position: absolute;
+	display: block;
+	top: 8rem;
+	left: 50vw;
+	height: calc(100vh * 1.15);
+	width: 33.3vw;
+	overflow: hidden;
+	opacity: 1;
+	z-index: 0;
+	pointer-events: none;
+	transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0.6s,
+		opacity 0.6s ease-in-out 0.6s, transform 0s;
+}
+/*add a reveal property*/
+
+@media (max-width: 1024px) and (orientation: portrait) {
+	.heading {
+		font-size: 15.6vw;
+		letter-spacing: 0.02ch;
+	}
+	.heading__line {
+		grid-column-start: 1 !important;
+		grid-column-end: 7;
+	}
+	.heading__abstract {
+		top: 2rem;
+		left: calc(50% - 16rem);
+		height: calc(100vh * 0.6);
+		width: 32rem;
+	}
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+	.heading {
+		padding-top: 0%;
+		font-size: 15.5vw;
+		font-weight: normal;
+		line-height: 0.8em;
+		letter-spacing: 0.01ch;
+	}
+	.heading__abstract {
+		top: -2rem;
+		width: 12rem;
+		left: calc(50% - 6rem);
+	}
+}
+
+/* heading intro section / hero */
+/** to do: when page load - heading text appears, moves from down up - staggered each line **/
+
+/* || Footer */
 
 /* || Animations */
 
