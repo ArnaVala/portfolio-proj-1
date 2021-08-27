@@ -46,13 +46,13 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<!--Site Layout-->
+		<!--SITE layout and wrappers, container-x/y-->
 		<div class="site-layout">
 			<div class="site-wrapper">
 				<!--setting div class=page for animation on screen bottom - to do later-->
 				<div class="page">
-					<!--container x y for paddings-->
 					<div class="page-content">
+						<!--HEADER - Logo and navigation. Nav-links with hover effects.-->
 						<header class="site-header container-x">
 							<!--logo - find logo-->
 							<div class="logo-wrapper">
@@ -61,13 +61,12 @@
 							</div>
 							<nav>
 								<a href="index.html" class="btn-underline nav-links">profile</a>
-								<a href="projects.html" class="btn-underline nav-links"
-									>projects</a
-								>
+								<a href="#" class="btn-underline nav-links">projects</a>
 							</nav>
 							<!--nav button ends-->
 						</header>
 						<main>
+							<!--HERO/INTRO SECTION - Responsive monospace heading in Grid Container. heading__line positioned with grid-columns. Main image, transform props when resizing desktop viewport-->
 							<section class="container-x">
 								<h2 class="heading grid-12">
 									<span class="heading__line"> Arna Vala </span>
@@ -86,6 +85,7 @@
 									</picture>
 								</div>
 							</section>
+							<!--DIVIDER between Intro and section content - anchor link with transition on hover-->
 							<div class="divider container-x">
 								<span class="divider__line"></span>
 								<p class="divider__text">
@@ -100,6 +100,7 @@
 									>
 								</p>
 							</div>
+							<!--ABOUT SECTION - short about paragraphs-->
 							<section class="about-section container-x container-y grid-12">
 								<div class="about-text">
 									<p>
@@ -115,6 +116,7 @@
 									</p>
 								</div>
 							</section>
+							<!--PROJECT SECTION - paragraph, list items, hover button, anchor links, animation on hover-->
 							<section class="container-x container-y">
 								<article class="project">
 									<div class="project-divider">
@@ -135,9 +137,124 @@
 										<span class="btn-rounded__text">GitHub Code</span>
 									</div>
 								</article>
+								<article class="project">
+									<div class="project-divider">
+										<span class="project-divider__year">2021</span>
+									</div>
+									<div class="project-desc">
+										<h2 class="project-desc__title">Project One</h2>
+										<p class="project-desc__text">
+											La croix craft beer lomo tbh, echo park mlkshk mixtape
+											pitchfork hoodie synth. Flannel portland etsy offal
+											try-hard. Squid yuccie VHS cloud bread actually.
+										</p>
+										<ul class="project-desc__list">
+											<li>Role: Front-end developer</li>
+											<li>Tech: HTML5, CSS, JavaScript</li>
+										</ul>
+										<span class="btn-rounded__text">Live Site</span>
+										<span class="btn-rounded__text">GitHub Code</span>
+									</div>
+									<div class="project-media">
+										<picture class="project-media__img">
+											<img src="" alt="project image" class="" />
+										</picture>
+									</div>
+								</article>
 							</section>
 						</main>
-						<footer>footer</footer>
+						<footer class="site-footer container-x">
+							<div class="section-contact grid-12">
+								<p class="section-contact__text">
+									Check out my profiles or get in touch.
+								</p>
+								<div class="section-contact__links">
+									<a
+										href="https://github.com/arnavala"
+										target="_blank"
+										rel="noopener"
+										class="contact-link has-hover"
+									>
+										<h4 class="link-name">github</h4>
+										<span class="link-text">Explore my code</span>
+										<div class="btn-arrow btn-arrow--tertiary">
+											<svg
+												version="1.1"
+												id="Layer_1"
+												xmlns="http://www.w3.org/2000/svg"
+												xmlns:xlink="http://www.w3.org/1999/xlink"
+												x="0px"
+												y="0px"
+												viewBox="0 0 476.213 476.213"
+												xml:space="preserve"
+												style="enable-background: new 0 0 476.213 476.213"
+											>
+												<polygon
+													points="345.606,107.5 324.394,128.713 418.787,223.107 0,223.107 0,253.107 418.787,253.107 324.394,347.5 345.606,368.713 476.213,238.106 "
+												></polygon>
+											</svg>
+										</div>
+									</a>
+									<!--Linkedin-->
+									<a
+										href="https://www.linkedin.com/"
+										target="_blank"
+										rel="noopener"
+										class="contact-link has-hover"
+									>
+										<h4 class="link-name">linkedin</h4>
+										<span class="link-text">Connect with me</span>
+										<div class="btn-arrow btn-arrow--tertiary">
+											<svg
+												version="1.1"
+												id="Layer_1"
+												xmlns="http://www.w3.org/2000/svg"
+												xmlns:xlink="http://www.w3.org/1999/xlink"
+												x="0px"
+												y="0px"
+												viewBox="0 0 476.213 476.213"
+												xml:space="preserve"
+												style="enable-background: new 0 0 476.213 476.213"
+											>
+												<polygon
+													points="345.606,107.5 324.394,128.713 418.787,223.107 0,223.107 0,253.107 418.787,253.107 324.394,347.5 345.606,368.713 476.213,238.106 "
+												></polygon>
+											</svg>
+										</div>
+									</a>
+									<!--Email-->
+									<a
+										href="mailto:arnavala@gmail.com"
+										target=""
+										rel="noopener"
+										class="contact-link has-hover"
+									>
+										<h4 class="link-name">Email</h4>
+										<span class="link-text">Get in touch</span>
+										<div class="btn-arrow btn-arrow--tertiary">
+											<svg
+												version="1.1"
+												id="Layer_1"
+												xmlns="http://www.w3.org/2000/svg"
+												xmlns:xlink="http://www.w3.org/1999/xlink"
+												x="0px"
+												y="0px"
+												viewBox="0 0 476.213 476.213"
+												xml:space="preserve"
+												style="enable-background: new 0 0 476.213 476.213"
+											>
+												<polygon
+													points="345.606,107.5 324.394,128.713 418.787,223.107 0,223.107 0,253.107 418.787,253.107 324.394,347.5 345.606,368.713 476.213,238.106 "
+												></polygon>
+											</svg>
+										</div>
+									</a>
+								</div>
+							</div>
+							<p class="site-footer__text">
+								©2021 – design &amp; code by Arna Vala
+							</p>
+						</footer>
 					</div>
 				</div>
 			</div>
