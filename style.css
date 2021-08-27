@@ -773,6 +773,86 @@ main {
 	fill: var(--color-secondary);
 }
 
+/* rounded button for links */
+
+.btn-wrapper {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.btn-rounded {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 4.8rem;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+	border-radius: 2.4rem;
+	background-color: 0 0;
+	border: 1px solid var(--color-secondary);
+	margin-top: 8rem;
+	padding-left: 2.4rem;
+	padding-right: 2rem;
+	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1),
+		transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0.6s,
+		visibility 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0.6s,
+		opacity 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0.6s, transform 0s;
+	transform: translateY(3rem);
+	visibility: visible;
+	opacity: 1;
+	white-space: nowrap;
+}
+.btn-rounded:hover {
+	background: var(--color-tertiary);
+}
+.btn-rounded:hover .btn-rounded__icon {
+	-webkit-animation: moveArrow 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+	animation: moveArrow 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+.btn-rounded__text {
+	font-size: 1.4rem;
+	color: var(--color-secondary);
+}
+.btn-rounded__icon {
+	height: 1.6rem;
+	width: auto;
+	transform: rotate(-45deg);
+	margin-left: 1.6rem;
+}
+.btn-rounded__icon polygon {
+	fill: var(--color-secondary);
+}
+
+/*remove hover animation and color for tablets and mobile */
+@media (max-width: 1024px) and (orientation: portrait) {
+	.btn-rounded:hover {
+		background: transparent none repeat 0 0 / auto auto padding-box border-box
+			scroll;
+		background: initial;
+	}
+	.btn-rounded:hover .btn-rounded__icon {
+		-webkit-animation: none;
+		animation: none;
+	}
+}
+@media (max-width: 850px) and (orientation: landscape) {
+	.btn-rounded:hover {
+		background: transparent none repeat 0 0 / auto auto padding-box border-box
+			scroll;
+		background: initial;
+	}
+	.btn-rounded:hover .btn-rounded__icon {
+		-webkit-animation: none;
+		animation: none;
+	}
+}
+
+/* SITE FOOTER */
+
 .site-footer {
 	position: relative;
 	display: flex;
@@ -917,5 +997,37 @@ main {
 	}
 	to {
 		transform: translate(-100%);
+	}
+}
+
+@-webkit-keyframes moveArrow {
+	0%,
+	to {
+		transform: translate(0) rotate(-45deg);
+		opacity: 0;
+	}
+	50% {
+		transform: translate(50%, -50%) rotate(-45deg);
+		opacity: 0.5;
+	}
+	51% {
+		transform: translate(-100%, 100%) rotate(-45deg);
+		opacity: 1;
+	}
+}
+
+@keyframes moveArrow {
+	0%,
+	to {
+		transform: translate(0) rotate(-45deg);
+		opacity: 0;
+	}
+	50% {
+		transform: translate(50%, -50%) rotate(-45deg);
+		opacity: 1;
+	}
+	51% {
+		transform: translate(-100%, 100%) rotate(-45deg);
+		opacity: 1;
 	}
 }
