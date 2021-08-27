@@ -699,7 +699,7 @@ main {
 	}
 }
 
-/** ABOUT SECTIONS**/
+/** ABOUT SECTION**/
 
 .about-text {
 	grid-column: 1/10;
@@ -728,7 +728,136 @@ main {
 	}
 }
 
-/* || Footer */
+/** PROJECT SECTION**/
+
+/* || FOOTER / CONTACT SECTION */
+
+/** buttons **/
+
+.btn-arrow {
+	display: flex;
+	height: 4.8rem;
+	width: 4.8rem;
+	border-radius: 50%;
+	background-color: var(--color-primary);
+}
+
+.site-footer {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	padding-top: 4.8rem;
+	background-color: var(--color-tertiary);
+	overflow: hidden;
+	z-index: 1;
+}
+
+.site-footer__text {
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+	font-size: 1.2rem;
+	line-height: 6.4rem;
+	color: var(--color-primary);
+	margin-bottom: 2.4rem;
+}
+
+.section-contact {
+	position: relative;
+	padding: 4.8rem 0;
+}
+
+/* using span, span changes on hover*/
+.section-contact__text {
+	grid-column: span 4;
+	font-size: 2.4rem;
+	color: var(--color-primary);
+	margin-bottom: 4rem;
+}
+
+/*using flexbox for positioning of content of each card*/
+.section-contact__links {
+	grid-column: 1/-1;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/*not using section-contact-link, cause it can be global*/
+.contact-link {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: flex-end;
+	height: 24rem;
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 0;
+	border: 1px solid var(--color-primary);
+	color: var(--color-primary);
+	padding: 2.4rem;
+	overflow: hidden;
+	/*add transition on hover*/
+}
+
+.section-contact__links .contact-link:nth-of-type(2) {
+	margin: 0 2.4rem;
+}
+
+.contact-link.has-hover:hover {
+	flex-grow: 3;
+	background-color: var(--color-secondary);
+}
+
+/*changing position on hover*/
+.contact-link.has.hover:hover .contact-link__name {
+	top: 3.2rem;
+	left: 2.4rem;
+	font-size: 1.8rem;
+	color: var(--color-tertiary);
+	transform: translate(0);
+}
+
+.contact-link.has-hover:hover .contact-link__text {
+	top: 7.2rem;
+	opacity: 1;
+}
+
+.contact-link.has-hover:hover .btn-arrow {
+	opacity: 1;
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+	.site-footer__text {
+		width: 100%;
+		line-height: 1;
+	}
+
+	.section-contact {
+		padding-bottom: 2.4rem;
+	}
+
+	.section-contact__links {
+		flex-direction: column;
+	}
+
+	.contact-link {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		height: 16rem;
+		min-height: 16rem;
+		width: 100%;
+		flex-basis: 1;
+	}
+	.section-contact__links .contact-link:nth-of-type(2) {
+		margin: 1.6rem 0;
+	}
+}
 
 /* || Animations */
 
