@@ -742,6 +742,37 @@ main {
 	background-color: var(--color-primary);
 }
 
+.btn-arrow svg {
+	height: 1.6rem;
+	width: auto;
+	transform: rotate(-45deg);
+	margin: auto;
+}
+
+.btn-arrow svg polygon {
+	fill: var(--color-primary);
+}
+/* bigger btn version */
+.btn-arrow--big svg {
+	height: 2.4rem;
+}
+/* different colors */
+.btn-arrow--secondary {
+	background-color: var(--color-secondary);
+}
+
+.btn-arrow--secondary svg polygon {
+	fill: var(--color-tertiary);
+}
+
+.btn-arrow--tertiary {
+	background-color: var(--color-tertiary);
+}
+
+.btn-arrow--tertiary svg polygon {
+	fill: var(--color-secondary);
+}
+
 .site-footer {
 	position: relative;
 	display: flex;
@@ -766,6 +797,7 @@ main {
 .section-contact {
 	position: relative;
 	padding: 4.8rem 0;
+	width: 100%;
 }
 
 /* using span, span changes on hover*/
