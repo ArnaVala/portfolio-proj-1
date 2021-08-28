@@ -1,302 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Arna Vala - Portfolio 2021</title>
-		<!--fonts-->
-		<link
-			rel="preload"
-			href="/assets/fonts/Apercu-Regular.woff2"
-			as="font"
-			type="font/woff2"
-			crossorigin
-		/>
-		<link
-			rel="preload"
-			href="/assets/fonts/Apercu-Medium.woff2"
-			as="font"
-			type="font/woff2"
-			crossorigin
-		/>
-		<link
-			rel="preload"
-			href="/assets/fonts/Apercu-Light.woff2"
-			as="font"
-			type="font/woff2"
-			crossorigin
-		/>
-		<link
-			rel="preload"
-			href="/assets/fonts/Apercu-Bold.woff2"
-			as="font"
-			type="font/woff2"
-			crossorigin
-		/>
-		<link
-			rel="preload"
-			href="/assets/fonts/Apercu-Mono.woff2"
-			as="font"
-			type="font/woff2"
-			crossorigin
-		/>
-		<!--stylesheets-->
-		<link rel="stylesheet" href="normalize.css" />
-		<link rel="stylesheet" href="style.css" />
-	</head>
-	<body>
-		<!--SITE layout and wrappers, container-x/y-->
-		<div class="site-layout">
-			<div class="site-wrapper">
-				<!--setting div class=page for animation on screen bottom - to do later-->
-				<div class="page">
-					<div class="page-content">
-						<!--HEADER - Logo and navigation. Nav-links with hover effects.-->
-						<header class="site-header container-x">
-							<!--logo - find logo-->
-							<div class="logo-wrapper">
-								<!--<div class="logo"></div>-->
-								<h1 class="logo-title">arna vala</h1>
-							</div>
-							<nav>
-								<a href="index.html" class="btn-underline nav-links">profile</a>
-								<a href="#" class="btn-underline nav-links">projects</a>
-							</nav>
-							<!--nav button ends-->
-						</header>
-						<main>
-							<!--HERO/INTRO SECTION - Responsive monospace heading in Grid Container. heading__line positioned with grid-columns. Main image, transform props when resizing desktop viewport-->
-							<section class="container-x">
-								<h2 class="heading grid-12">
-									<span class="heading__line"> Arna Vala </span>
 
-									<span class="heading__line">Designer<span>&amp; </span></span>
-									<span class="heading__line">Front-end</span
-									><span class="heading__line">Developer</span>
-								</h2>
-								<div class="heading__abstract">
-									<picture>
-										<img
-											src="assets/images/distortme.jpg"
-											alt="abstract"
-											class=""
-										/>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Arna Vala - Portfolio 2021</title>
+	<!--fonts-->
+	<link rel="preload" href="/assets/fonts/Apercu-Regular.woff2" as="font" type="font/woff2" crossorigin />
+	<link rel="preload" href="/assets/fonts/Apercu-Medium.woff2" as="font" type="font/woff2" crossorigin />
+	<link rel="preload" href="/assets/fonts/Apercu-Light.woff2" as="font" type="font/woff2" crossorigin />
+	<link rel="preload" href="/assets/fonts/Apercu-Bold.woff2" as="font" type="font/woff2" crossorigin />
+	<link rel="preload" href="/assets/fonts/Apercu-Mono.woff2" as="font" type="font/woff2" crossorigin />
+	<!--stylesheets-->
+	<link rel="stylesheet" href="normalize.css" />
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<!--SITE layout and wrappers, container-x/y-->
+	<div class="site-layout">
+		<div class="site-wrapper">
+			<!--setting div class=page for animation on screen bottom - to do later-->
+			<div class="page">
+				<div class="page-content">
+					<!--HEADER - Logo and navigation. Nav-links with hover effects.-->
+					<header class="site-header container-x">
+						<!--logo - find logo-->
+						<div class="logo-wrapper">
+							<!--<div class="logo"></div>-->
+							<h1 class="logo-title">arna vala</h1>
+						</div>
+						<nav>
+							<a href="#profile" class="btn-underline nav-links">profile</a>
+							<a href="#projects" class="btn-underline nav-links">projects</a>
+						</nav>
+						<!--nav button ends-->
+					</header>
+					<main>
+						<!--HERO/INTRO SECTION - Responsive monospace heading in Grid Container. heading__line positioned with grid-columns. Main image, transform props when resizing desktop viewport-->
+						<section class="container-x">
+							<h2 class="heading grid-12">
+								<span class="heading__line"> Arna Vala </span>
+
+								<span class="heading__line">Designer<span>&amp; </span></span>
+								<span class="heading__line">Front-end</span><span class="heading__line">Developer</span>
+							</h2>
+							<div class="heading__abstract">
+								<picture>
+									<img src="assets/images/distortme.jpg" alt="abstract" class="" />
+								</picture>
+							</div>
+						</section>
+						<!--DIVIDER between Intro and section content - anchor link with transition on hover-->
+						<div class="divider container-x">
+							<span class="divider__line"></span>
+							<p class="divider__text">
+								Based in Reykjavík. Currently studying front-end development
+								and design at the
+								<a href="https://en.tskoli.is/study-programme/reykjavik-academy-of-web-development/" target="_blank"
+									rel="noopener" class="link">Reykjavík Academy of Web Development.</a>
+							</p>
+						</div>
+						<!--ABOUT SECTION - short about paragraphs-->
+						<section id="profile" class="about-section container-x container-y grid-12">
+							<div class="about-text">
+								<p>
+									Coming with background in architecture and years of
+									experience working as a freelance designer – I find myself
+									at the intersection between ux/ui design and front-end
+									development.
+								</p>
+								<p>
+									I love design systems and aim to create neat, structured and
+									minimalist, yet creative websites. I believe in simplicity,
+									clarity and an user-centered approach in my work.
+								</p>
+							</div>
+						</section>
+						<!--PROJECT SECTION - paragraph, list items, hover button, anchor links, animation on hover-->
+						<section id="projects" class="container-x">
+							<article class="project">
+								<div class="project-divider">
+									<span class="project-divider__year">2021</span>
+									<span class="project-divider__line"></span>
+									<span class="project-divider__type">Module 1</span>
+								</div>
+								<!--END DIVIDER-->
+								<div class="project-desc">
+									<h2 class="project-desc__title">Portfolio</h2>
+									<p class="project-desc__text">
+										This is the first project in Vefskoli, a one page
+										responsive portfolio site built with HTML5 and CSS. It
+										contains a navigation, hero section, about paragraph and
+										list of projects. Used both css grid and css flexbox for
+										styling, hover state and animation for links.
+									</p>
+									<ul class="project-desc__list">
+										<li>
+											<span>Role:</span> Front-end developer, Web design
+										</li>
+										<li><span>Tech:</span> HTML5, CSS</li>
+										<li><span>Tools:</span> GitHub, Figma, VSCode</li>
+									</ul>
+
+									<div class="project-desc__links">
+										<a href="#" target="_blank" rel="noopener" class="btn-rounded">
+											<span class="btn-rounded__text">Site</span>
+											<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+												xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 476.213 476.213"
+												class="btn-rounded__icon">
+												<polygon
+													points="345.606,107.5 324.394,128.713 418.787,223.107 0,223.107 0,253.107 418.787,253.107 324.394,347.5 345.606,368.713 476.213,238.106 " />
+											</svg>
+										</a>
+										<a href="https://github.com/ArnaVala/vs-m1-portfolio" target="_blank" rel="noopener"
+											class="btn-rounded">
+											<span class="btn-rounded__text">Code</span>
+											<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+												xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 476.213 476.213"
+												class="btn-rounded__icon">
+												<polygon
+													points="345.606,107.5 324.394,128.713 418.787,223.107 0,223.107 0,253.107 418.787,253.107 324.394,347.5 345.606,368.713 476.213,238.106 " />
+											</svg>
+										</a>
+									</div>
+								</div>
+								<!-- END PROJECT DESC -->
+								<!--PROJECT MEDIA -->
+								<div class="project-media">
+									<picture class="project-media__img">
+										<img src="/assets/images/project-dummy.jpg" alt="project image" class="" />
 									</picture>
 								</div>
-							</section>
-							<!--DIVIDER between Intro and section content - anchor link with transition on hover-->
-							<div class="divider container-x">
-								<span class="divider__line"></span>
-								<p class="divider__text">
-									Based in Reykjavík. Currently studying front-end development
-									and design at the
-									<a
-										href="https://en.tskoli.is/study-programme/reykjavik-academy-of-web-development/"
-										target="_blank"
-										rel="noopener"
-										class="link"
-										>Reykjavík Academy of Web Development.</a
-									>
-								</p>
-							</div>
-							<!--ABOUT SECTION - short about paragraphs-->
-							<section class="about-section container-x container-y grid-12">
-								<div class="about-text">
-									<p>
-										Coming with background in architecture and years of
-										experience working as a freelance designer – I find myself
-										at the intersection between ux/ui design and front-end
-										development.
-									</p>
-									<p>
-										I love design systems and aim to create neat, structured and
-										minimalist, yet creative websites. I believe in simplicity,
-										clarity and an user-centered approach in my work.
-									</p>
+								<!--END MEDIA DIV-->
+							</article>
+							<article class="project">
+								<div class="project-divider">
+									<span class="project-divider__year">2021</span>
+									<span class="project-divider__line"></span>
+									<span class="project-divider__type">Module 1</span>
 								</div>
-							</section>
-							<!--PROJECT SECTION - paragraph, list items, hover button, anchor links, animation on hover-->
-							<section class="container-x">
-								<article class="project">
-									<div class="project-divider">
-										<span class="project-divider__year">2021</span>
-										<span class="project-divider__line"></span>
-									</div>
-									<!--END DIVIDER-->
-									<div class="project-desc">
-										<h2 class="project-desc__title">Project One</h2>
-										<p class="project-desc__text">
-											Snackwave master cleanse single-origin coffee squid
-											pitchfork gentrify nostrud sint. Cloud bread disrupt vinyl
-											commodo vice vexillologist gluten-free bushwick
-											microdosing yuccie nulla meggings blue bottle do.
-										</p>
-										<ul class="project-desc__list">
-											<li>
-												<span>Role:</span> Front-end developer, UX/UI Design
-											</li>
-											<li><span>Tech:</span> HTML5, CSS, JavaScript</li>
-											<li><span>Design:</span> Figma, Illustrator</li>
-										</ul>
+								<!--END DIVIDER-->
+								<div class="project-desc">
+									<h2 class="project-desc__title">Poster</h2>
+									<p class="project-desc__text">
+										A Poster webpage practicing layout and positioning with
+										HTML5 and CSS, animation with keyframes in CSS.
+									</p>
+									<ul class="project-desc__list">
+										<li><span>Role:</span> Front-end developer</li>
+										<li><span>Tech:</span> HTML5, CSS</li>
+										<li><span>Design:</span> Swissed inspired poster</li>
+									</ul>
 
-										<div class="project-desc__links">
-											<a
-												href=""
-												target="_blank"
-												rel="noopener"
-												class="btn-rounded"
-											>
-												<span class="btn-rounded__text">Site</span>
-												<svg
-													version="1.1"
-													id="Layer_1"
-													xmlns="http://www.w3.org/2000/svg"
-													xmlns:xlink="http://www.w3.org/1999/xlink"
-													x="0px"
-													y="0px"
-													viewBox="0 0 476.213 476.213"
-													class="btn-rounded__icon"
-												>
-													<polygon
-														points="345.606,107.5 324.394,128.713 418.787,223.107 0,223.107 0,253.107 418.787,253.107 324.394,347.5 345.606,368.713 476.213,238.106 "
-													/>
-												</svg>
-											</a>
-											<a
-												href=""
-												target="_blank"
-												rel="noopener"
-												class="btn-rounded"
-											>
-												<span class="btn-rounded__text">Code</span>
-												<svg
-													version="1.1"
-													id="Layer_1"
-													xmlns="http://www.w3.org/2000/svg"
-													xmlns:xlink="http://www.w3.org/1999/xlink"
-													x="0px"
-													y="0px"
-													viewBox="0 0 476.213 476.213"
-													class="btn-rounded__icon"
-												>
-													<polygon
-														points="345.606,107.5 324.394,128.713 418.787,223.107 0,223.107 0,253.107 418.787,253.107 324.394,347.5 345.606,368.713 476.213,238.106 "
-													/>
-												</svg>
-											</a>
-										</div>
+									<div class="project-desc__links">
+										<a href="" target="_blank" rel="noopener" class="btn-rounded">
+											<span class="btn-rounded__text">Site</span>
+											<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+												xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 476.213 476.213"
+												class="btn-rounded__icon">
+												<polygon
+													points="345.606,107.5 324.394,128.713 418.787,223.107 0,223.107 0,253.107 418.787,253.107 324.394,347.5 345.606,368.713 476.213,238.106 " />
+											</svg>
+										</a>
+										<a href="" target="_blank" rel="noopener" class="btn-rounded">
+											<span class="btn-rounded__text">Code</span>
+											<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+												xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 476.213 476.213"
+												class="btn-rounded__icon">
+												<polygon
+													points="345.606,107.5 324.394,128.713 418.787,223.107 0,223.107 0,253.107 418.787,253.107 324.394,347.5 345.606,368.713 476.213,238.106 " />
+											</svg>
+										</a>
 									</div>
-									<!-- END PROJECT DESC -->
-									<!--PROJECT MEDIA -->
-									<div class="project-media">
-										<picture class="project-media__img">
-											<img
-												src="/assets/images/project-dummy.jpg"
-												alt="project image"
-												class=""
-											/>
-										</picture>
-									</div>
-									<!--END MEDIA DIV-->
-								</article>
-							</section>
-						</main>
-						<footer class="site-footer container-x">
-							<div class="section-contact grid-12">
-								<p class="section-contact__text">
-									Get in touch or check out me profiles.
-								</p>
-								<div class="section-contact__links">
-									<a
-										href="https://github.com/arnavala"
-										target="_blank"
-										rel="noopener"
-										class="contact-link has-hover"
-									>
-										<h4 class="contact-link__name">github</h4>
-										<span class="contact-link__text">Explore my code</span>
-										<div class="btn-arrow btn-arrow--tertiary">
-											<svg
-												version="1.1"
-												id="Layer_1"
-												xmlns="http://www.w3.org/2000/svg"
-												xmlns:xlink="http://www.w3.org/1999/xlink"
-												x="0px"
-												y="0px"
-												viewBox="0 0 476.213 476.213"
-												xml:space="preserve"
-												style="enable-background: new 0 0 476.213 476.213"
-											>
-												<polygon
-													points="345.606,107.5 324.394,128.713 418.787,223.107 0,223.107 0,253.107 418.787,253.107 324.394,347.5 345.606,368.713 476.213,238.106 "
-												></polygon>
-											</svg>
-										</div>
-									</a>
-									<!--Linkedin-->
-									<a
-										href="https://www.linkedin.com/"
-										target="_blank"
-										rel="noopener"
-										class="contact-link has-hover"
-									>
-										<h4 class="contact-link__name">linkedin</h4>
-										<span class="contact-link__text">Connect with me</span>
-										<div class="btn-arrow btn-arrow--tertiary">
-											<svg
-												version="1.1"
-												id="Layer_1"
-												xmlns="http://www.w3.org/2000/svg"
-												xmlns:xlink="http://www.w3.org/1999/xlink"
-												x="0px"
-												y="0px"
-												viewBox="0 0 476.213 476.213"
-												xml:space="preserve"
-												style="enable-background: new 0 0 476.213 476.213"
-											>
-												<polygon
-													points="345.606,107.5 324.394,128.713 418.787,223.107 0,223.107 0,253.107 418.787,253.107 324.394,347.5 345.606,368.713 476.213,238.106 "
-												></polygon>
-											</svg>
-										</div>
-									</a>
-									<!--Email-->
-									<a
-										href="mailto:arnavala@gmail.com"
-										target=""
-										rel="noopener"
-										class="contact-link has-hover"
-									>
-										<h4 class="contact-link__name">Email</h4>
-										<span class="contact-link__text">Get in touch</span>
-										<div class="btn-arrow btn-arrow--tertiary">
-											<svg
-												version="1.1"
-												id="Layer_1"
-												xmlns="http://www.w3.org/2000/svg"
-												xmlns:xlink="http://www.w3.org/1999/xlink"
-												x="0px"
-												y="0px"
-												viewBox="0 0 476.213 476.213"
-												xml:space="preserve"
-												style="enable-background: new 0 0 476.213 476.213"
-											>
-												<polygon
-													points="345.606,107.5 324.394,128.713 418.787,223.107 0,223.107 0,253.107 418.787,253.107 324.394,347.5 345.606,368.713 476.213,238.106 "
-												></polygon>
-											</svg>
-										</div>
-									</a>
 								</div>
-							</div>
-							<p class="site-footer__text">
-								©2021 – design &amp; code by Arna Vala
+								<!-- END PROJECT DESC -->
+								<!--PROJECT MEDIA -->
+								<div class="project-media">
+									<picture class="project-media__img">
+										<img src="/assets/images/project-dummy.jpg" alt="project image" class="" />
+									</picture>
+								</div>
+								<!--END MEDIA DIV-->
+							</article>
+
+							<article class="project">
+								<div class="project-divider">
+									<span class="project-divider__year">2021</span>
+									<span class="project-divider__line"></span>
+									<span class="project-divider__type">Module 1</span>
+								</div>
+								<!--END DIVIDER-->
+								<div class="project-desc">
+									<h2 class="project-desc__title">Design Principles</h2>
+									<p class="project-desc__text">
+										Snackwave master cleanse single-origin coffee squid
+										pitchfork gentrify nostrud sint. Cloud bread disrupt vinyl
+										commodo vice vexillologist gluten-free bushwick
+										microdosing yuccie nulla meggings blue bottle do.
+									</p>
+									<ul class="project-desc__list">
+										<li><span>Role:</span> Front-end developer, design</li>
+										<li><span>Tech:</span> HTML5, CSS, CSS animation</li>
+									</ul>
+
+									<div class="project-desc__links">
+										<a href="" target="_blank" rel="noopener" class="btn-rounded">
+											<span class="btn-rounded__text">Site</span>
+											<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+												xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 476.213 476.213"
+												class="btn-rounded__icon">
+												<polygon
+													points="345.606,107.5 324.394,128.713 418.787,223.107 0,223.107 0,253.107 418.787,253.107 324.394,347.5 345.606,368.713 476.213,238.106 " />
+											</svg>
+										</a>
+										<a href="" target="_blank" rel="noopener" class="btn-rounded">
+											<span class="btn-rounded__text">Code</span>
+											<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+												xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 476.213 476.213"
+												class="btn-rounded__icon">
+												<polygon
+													points="345.606,107.5 324.394,128.713 418.787,223.107 0,223.107 0,253.107 418.787,253.107 324.394,347.5 345.606,368.713 476.213,238.106 " />
+											</svg>
+										</a>
+									</div>
+								</div>
+								<!-- END PROJECT DESC -->
+								<!--PROJECT MEDIA -->
+								<div class="project-media">
+									<picture class="project-media__img">
+										<img src="/assets/images/project-dummy.jpg" alt="project image" class="" />
+									</picture>
+								</div>
+								<!--END MEDIA DIV-->
+							</article>
+						</section>
+					</main>
+					<footer class="site-footer container-x">
+						<div class="section-contact grid-12">
+							<p class="section-contact__text">
+								Get in touch or check out me profiles.
 							</p>
-						</footer>
-					</div>
+							<div class="section-contact__links">
+								<a href="https://github.com/arnavala" target="_blank" rel="noopener" class="contact-link has-hover">
+									<h4 class="contact-link__name">github</h4>
+									<span class="contact-link__text">Explore my code</span>
+									<div class="btn-arrow btn-arrow--tertiary">
+										<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+											xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 476.213 476.213"
+											xml:space="preserve" style="enable-background: new 0 0 476.213 476.213">
+											<polygon
+												points="345.606,107.5 324.394,128.713 418.787,223.107 0,223.107 0,253.107 418.787,253.107 324.394,347.5 345.606,368.713 476.213,238.106 ">
+											</polygon>
+										</svg>
+									</div>
+								</a>
+								<!--Linkedin-->
+								<a href="https://www.linkedin.com/" target="_blank" rel="noopener" class="contact-link has-hover">
+									<h4 class="contact-link__name">linkedin</h4>
+									<span class="contact-link__text">Check this out</span>
+									<div class="btn-arrow btn-arrow--tertiary">
+										<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+											xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 476.213 476.213"
+											xml:space="preserve" style="enable-background: new 0 0 476.213 476.213">
+											<polygon
+												points="345.606,107.5 324.394,128.713 418.787,223.107 0,223.107 0,253.107 418.787,253.107 324.394,347.5 345.606,368.713 476.213,238.106 ">
+											</polygon>
+										</svg>
+									</div>
+								</a>
+								<!--Email-->
+								<a href="mailto:arnavala@gmail.com" target="" rel="noopener" class="contact-link has-hover">
+									<h4 class="contact-link__name">Email</h4>
+									<span class="contact-link__text">Get in touch</span>
+									<div class="btn-arrow btn-arrow--tertiary">
+										<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+											xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 476.213 476.213"
+											xml:space="preserve" style="enable-background: new 0 0 476.213 476.213">
+											<polygon
+												points="345.606,107.5 324.394,128.713 418.787,223.107 0,223.107 0,253.107 418.787,253.107 324.394,347.5 345.606,368.713 476.213,238.106 ">
+											</polygon>
+										</svg>
+									</div>
+								</a>
+							</div>
+						</div>
+						<p class="site-footer__text">
+							©2021 – design &amp; code by Arna Vala
+						</p>
+					</footer>
 				</div>
 			</div>
 		</div>
-	</body>
+	</div>
+</body>
+
 </html>
