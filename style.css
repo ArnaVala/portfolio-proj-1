@@ -304,11 +304,9 @@ html {
 }
 
 body {
-	/*----color-primary: hsl(205, 100%, 40%);*/
-	/*--color-secondary: hsl(207, 9%, 77%);;*/
 	--color-primary: rgb(25, 25, 25);
 	--color-secondary: #f0f0f0;
-	--color-tertiary: #5286eb /*#5586e5;*/;
+	--color-tertiary: #5286eb;
 	font-family: 'Apercu-Regular', 'Roboto', sans-serif;
 	font-size: 1.6rem;
 	line-height: 1.5;
@@ -844,13 +842,13 @@ main {
 	height: auto;
 	width: 40vw;
 	z-index: 1;
-	transform: translate(-10%, -45%) rotate(5deg);
+	transform: translate(-10%, -45%) rotate(2deg);
 }
 
 .project-media__img img {
 	height: auto;
 	width: 100%;
-	opacity: 0.9;
+	box-shadow: 4px 4px 0px #5286eb;
 }
 
 @media (max-width: 1024px) {

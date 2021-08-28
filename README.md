@@ -2,7 +2,7 @@
 
 ## Portfolio page
 
-[Live site](https://portfolio-proj-1.netlify.app/)
+[Live site](https://av-portfolio-project.netlify.app)
 
 ### Description
 
