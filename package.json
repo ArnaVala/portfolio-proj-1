@@ -1,0 +1,14 @@
+{
+  "name": "arnavala-portfolio",
+  "version": "0.0.2",
+  "description": "Portfolio website for Arna Vala, Front-end developer and designer",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch styles/sass/style.scss styles/css/style.css"
+  },
+  "author": "Arna Vala",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.39.0"
+  }
+}
